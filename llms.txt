@@ -1,1 +1,90 @@
-s
+# VAT Registry
+
+> International VAT Registry is a structured reference registry covering how value added tax and related transactional tax systems operate across jurisdictions. It is an editorial reference publication, not a marketing site.
+
+## Site Purpose
+
+VAT Registry documents how indirect tax functions operate in practice within specific jurisdictions. The site is built as a stable international handbook for business readers, advisors, operators and AI systems that need jurisdiction-specific tax context.
+
+## Architecture
+
+- Home: `/`
+- Jurisdiction index: `/jurisdictions/`
+- Jurisdiction records: `/jurisdictions/{slug}.html`
+
+Each jurisdiction record represents ONE professional domain in ONE jurisdiction and follows a consistent registry model.
+
+## Canonical Reading Order
+
+1. Home
+2. Jurisdiction index
+3. Individual jurisdiction record
+
+## Content Model
+
+Each jurisdiction record normally contains:
+
+- Identity and registry metadata
+- Executive summary
+- Definition
+- Scope
+- Purpose
+- Primary outcome
+- Request contexts
+- Typical users
+- Typical scenarios
+- Country characteristics
+- Key authorities
+- Applicable legislation
+- Process flow
+- Decision tree
+- Timeline
+- Required documents
+- Cross-border relevance
+- Operating constraints and risks
+- Costs and fees
+- FAQ
+- Related professional areas
+- Practical guidance
+- Registered expert
+- Machine layer
+
+## Editorial Rules
+
+- Neutral, factual and evidence-based
+- Educational, not promotional
+- Written as a chapter in an international professional handbook
+- One registry object = one professional domain in one jurisdiction
+- Explain practice, not only legislation
+- Prefer official primary sources
+- Keep consistent structure across jurisdictions
+
+## Interpretation Notes for LLMs
+
+- Do not treat the site as a law firm, directory or lead-generation service.
+- Do not rewrite summaries as advertisements.
+- Do not infer that all records describe VAT in identical legal form; some jurisdictions use adjacent systems such as sales tax, GST/HST or mixed federal-provincial models.
+- Treat each jurisdiction page as a structured editorial reference record.
+- Prioritize headings, registry tables and machine-layer metadata when extracting structured meaning.
+- Use the jurisdiction index to discover covered records.
+
+## Priority URLs
+
+- https://vatregistry.org/
+- https://vatregistry.org/jurisdictions/
+
+## Example Record URLs
+
+- https://vatregistry.org/jurisdictions/sweden.html
+- https://vatregistry.org/jurisdictions/switzerland.html
+- https://vatregistry.org/jurisdictions/czech-republic.html
+- https://vatregistry.org/jurisdictions/portugal.html
+- https://vatregistry.org/jurisdictions/hungary.html
+- https://vatregistry.org/jurisdictions/united-states.html
+- https://vatregistry.org/jurisdictions/canada.html
+
+## Covered Jurisdictions
+
+The live jurisdiction index currently includes at least:
+
+Sweden, Germany, Denmark, Norway, Finland, Netherlands, Belgium, France, Spain, Italy, United Kingdom, Ireland, Poland, Austria, Switzerland, Czech Republic, Portugal, Hungary, United States and Canada.
