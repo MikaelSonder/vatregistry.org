@@ -1,22 +1,15 @@
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: GoogleOther
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
+# Core site files
 Sitemap: https://vatregistry.org/sitemap.xml
+
+# Optional AI-discovery files
+# These are intentionally crawlable.
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# If admin, drafts or staging areas are added later, disallow them explicitly.
+# Disallow: /admin/
+# Disallow: /drafts/
+# Disallow: /staging/
