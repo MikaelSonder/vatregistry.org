@@ -1,0 +1,447 @@
+/*
+==========================================================
+PROFESSIONAL ONTOLOGY REGISTRY (POR)
+Registry Design Language (RDL)
+vatregistry.org
+==========================================================
+*/
+
+:root {
+  --bg: #ffffff;
+  --surface: #fafafa;
+  --surface-2: #f1f1f1;
+  --text: #111111;
+  --muted: #666666;
+  --line: #cfcfcf;
+  --line-dark: #999999;
+  --line-strong: #222222;
+  --accent: #1d3f5f;
+  --max: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  padding: 32px;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.registry-container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  background: #fff;
+  border: 1px solid var(--line-strong);
+  padding: 8px 10px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.registry-header {
+  border-top: 3px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-dark);
+  padding: 18px 0 22px;
+  margin-bottom: 26px;
+}
+
+.registry-breadcrumb {
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: Consolas, Monaco, monospace;
+  letter-spacing: 0.3px;
+}
+
+.registry-breadcrumb a {
+  color: var(--muted);
+}
+
+.registry-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.registry-metadata {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+}
+
+.registry-title {
+  margin: 14px 0 4px;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.registry-subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.registry-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.registry-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-dark);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.registry-button--primary {
+  background: var(--line-strong);
+  color: #fff;
+  border-color: var(--line-strong);
+}
+
+.registry-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+  padding-inline: 2px;
+}
+
+.registry-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12px;
+}
+
+.registry-nav-list a {
+  color: var(--muted);
+}
+
+.registry-intro {
+  margin-bottom: 26px;
+}
+
+.registry-intro p {
+  max-width: 100ch;
+  margin: 0 0 14px;
+}
+
+.registry-tree {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 18px;
+  margin-bottom: 38px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+  line-height: 1.75;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.registry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.registry-panel {
+  border: 1px solid var(--line);
+  background: #fff;
+  min-width: 0;
+}
+
+.registry-panel-title {
+  background: #efefef;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.registry-panel-content {
+  padding: 14px;
+}
+
+.registry-panel-content ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.registry-panel-content li {
+  margin: 6px 0;
+}
+
+.registry-section {
+  margin-top: 44px;
+  scroll-margin-top: 80px;
+}
+
+.registry-section-title {
+  border-bottom: 2px solid #333;
+  padding-bottom: 7px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.registry-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registry-table tr:nth-child(even) {
+  background: var(--surface);
+}
+
+.registry-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  vertical-align: top;
+}
+
+.registry-table td:first-child {
+  width: 260px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.registry-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--line-dark);
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0 6px 6px 0;
+  text-transform: uppercase;
+}
+
+.registry-badge--accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.registry-divider {
+  border-top: 1px solid #d8d8d8;
+  margin: 40px 0;
+}
+
+.registry-note {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 16px;
+  margin-top: 18px;
+}
+
+.registry-footer {
+  margin-top: 70px;
+  border-top: 2px solid var(--line-strong);
+  padding: 16px 0 24px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.registry-footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.registry-footer-meta {
+  font-family: Consolas, Monaco, monospace;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.registry-footer-meta span {
+  display: block;
+}
+
+.registry-footer-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.registry-footer-nav {
+  margin-bottom: 0.5rem;
+}
+
+.registry-footer-nav a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 0.8rem;
+}
+
+.registry-footer-copy {
+  color: #777;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 960px) {
+  body {
+    padding: 22px;
+  }
+
+  .registry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-table,
+  .registry-table tbody,
+  .registry-table tr,
+  .registry-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .registry-table tr {
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+    background: transparent !important;
+  }
+
+  .registry-table td:first-child {
+    width: auto;
+    padding-bottom: 2px;
+    border-bottom: none;
+  }
+
+  .registry-table td:last-child {
+    padding-top: 0;
+  }
+
+  .registry-toolbar {
+    flex-direction: column;
+  }
+
+  .registry-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .registry-title {
+    letter-spacing: 1px;
+  }
+
+  .registry-subtitle {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .registry-nav-list {
+    gap: 8px 12px;
+  }
+
+  .registry-button {
+    width: 100%;
+  }
+
+  .registry-actions {
+    width: 100%;
+  }
+}
+
+@media print {
+  body {
+    padding: 20px;
+    font-size: 12px;
+    color: #000;
+    background: #fff;
+  }
+
+  .registry-nav,
+  .registry-actions,
+  .skip-link {
+    display: none !important;
+  }
+
+  .registry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .registry-panel,
+  .registry-note,
+  .registry-tree {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
