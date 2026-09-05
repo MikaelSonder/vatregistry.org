@@ -7,69 +7,205 @@
     <loc>https://vatregistry.org/jurisdictions/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/llms.txt</loc>
+    <loc>https://vatregistry.org/privacy-policy/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/llms-full.txt</loc>
+    <loc>https://vatregistry.org/terms-of-use/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/europe/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/sweden</loc>
+    <loc>https://vatregistry.org/international/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/austria/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/germany</loc>
+    <loc>https://vatregistry.org/belgium/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/denmark</loc>
+    <loc>https://vatregistry.org/bulgaria/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/norway</loc>
+    <loc>https://vatregistry.org/croatia/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/finland</loc>
+    <loc>https://vatregistry.org/czech-republic/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/netherlands</loc>
+    <loc>https://vatregistry.org/denmark/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/belgium</loc>
+    <loc>https://vatregistry.org/finland/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/france</loc>
+    <loc>https://vatregistry.org/france/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/spain</loc>
+    <loc>https://vatregistry.org/germany/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/italy</loc>
+    <loc>https://vatregistry.org/greece/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/united-kingdom</loc>
+    <loc>https://vatregistry.org/hungary/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/ireland</loc>
+    <loc>https://vatregistry.org/ireland/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/poland</loc>
+    <loc>https://vatregistry.org/italy/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/austria</loc>
+    <loc>https://vatregistry.org/luxembourg/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/switzerland</loc>
+    <loc>https://vatregistry.org/netherlands/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/czech-republic</loc>
+    <loc>https://vatregistry.org/norway/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/portugal</loc>
+    <loc>https://vatregistry.org/poland/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/hungary</loc>
+    <loc>https://vatregistry.org/portugal/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/united-states</loc>
+    <loc>https://vatregistry.org/romania/</loc>
   </url>
   <url>
-    <loc>https://vatregistry.org/jurisdictions/canada</loc>
+    <loc>https://vatregistry.org/slovakia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/slovenia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/spain/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/sweden/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/switzerland/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-kingdom/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-kingdom/england-wales/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-kingdom/scotland/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-kingdom/northern-ireland/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/canada/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/canada/ontario/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/canada/quebec/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/canada/british-columbia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/canada/alberta/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/mexico/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/california/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/delaware/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/florida/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/georgia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/illinois/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/massachusetts/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/nevada/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/new-jersey/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/new-york/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/pennsylvania/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/texas/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/washington/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-states/wyoming/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/china/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/hong-kong/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/india/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/japan/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/singapore/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/south-korea/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/australia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/new-zealand/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/israel/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/qatar/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/saudi-arabia/</loc>
+  </url>
+  <url>
+    <loc>https://vatregistry.org/united-arab-emirates/</loc>
+  </url>
+
+  <url>
+    <loc>https://vatregistry.org/brazil/</loc>
   </url>
 </urlset>
